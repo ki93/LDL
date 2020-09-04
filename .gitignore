@@ -1,5 +1,15 @@
-# Created by https://www.toptal.com/developers/gitignore/api/microsoftoffice
-# Edit at https://www.toptal.com/developers/gitignore?templates=microsoftoffice
+# Created by https://www.toptal.com/developers/gitignore/api/microsoftoffice,adobe
+# Edit at https://www.toptal.com/developers/gitignore?templates=microsoftoffice,adobe
+
+### Adobe ###
+# Adobe Source Files
+*.psd
+*.ai
+*.indd
+*.prproj
+*.aep
+*.pdf
+*.docx
 
 ### MicrosoftOffice ###
 *.tmp
@@ -22,4 +32,4 @@ Backup of *.doc*
 # Visio autosave temporary files
 *.~vsd*
 
-# End of https://www.toptal.com/developers/gitignore/api/microsoftoffice
+# End of https://www.toptal.com/developers/gitignore/api/microsoftoffice,adobe
