@@ -62,6 +62,7 @@
 ### How to minimize cost
 
 - W : Wegith (가중치)
+- b : bias (절편)
 - Simplified hypothesis
     - H(x) = Wx + b
 - ![](img/mincost1.JPG)
@@ -82,7 +83,26 @@
     - ![](img/mincost5.JPG)
     - Convex function을 보면 어디에서나 하나의 위치로 향하는 것을 확일 할 수 있음
 
+# Lecture4
+### Multivariable linear regression
 
+- Recap : 요약
+- Linear regression을 설계하기 위한 필요사항
+    - Hypothesis : 가설이 무엇인지 (ex. H(x)=...)
+    - Cost function : cost 혹은 loss 어떻게 정의할 것인가(잘 했는지 못 했는지를 코스트로 판단, ex. 제곱해서 사용)
+    - Gradient descent algorithm : cost를 최적화하는 알고리즘 (함수의 경사면을 따라 내려간다)
+- regression using three inputs (x1, x2, x3)
+    - ![](img/multivarcostfunc1.JPG)
+    - Matrix를 이용해 표현 (Dot Product)
+    - Hypothesis using matrix
+        - &omega;<sub>1</sub>x<sub>1</sub> + &omega;<sub>2</sub>x<sub>2</sub> + &omega;<sub>3</sub>x<sub>3</sub> + ... + &omega;<sub>n</sub>x<sub>n</sub> = WX
+        - H(X) = XW
+        - X의 한 행을 Instance라고 칭한다
+        - W 구하기
+            - ![](img/matrixhypo1.JPG)
+    - Matrix를 사용하면 input, instance, output이 많아도 한 번에 처리 가능
+    - Lecture (theory) : H(X) = Wx + b
+    - Implementation (TensorFlow) : H(X) = XW (행령 X가 먼저)
 
 
 
