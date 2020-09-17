@@ -104,5 +104,32 @@
     - Lecture (theory) : H(X) = Wx + b
     - Implementation (TensorFlow) : H(X) = XW (행령 X가 먼저)
 
+# Lecture5-1
+### Logistic (regression) classification
+
+- logistic classification
+    - classification algorithm 중 정확
+    - 실제 문제에 적용 가능
+    - neural network와 Deep Learning 잘 이해하는 데 중요한 부분
+- Binary classification
+    - 0, 1 encoding
+    - example
+        - Email Spam Detection : Spam (1) or Ham (0)
+        - Facebook feed : show (1) or hide(0)
+        - Credit Card Fraudulent Transaction detection : legitimate (0) or fraud(1)
+        - Radiology : Malignant tumor or Benign tumor
+        - Finance (주식) : Sell or Buy
+    - Pass (1) / Fail (0) based on study hours
+        - linear regression 사용의 문제
+            1. ![](img/biclass1.JPG)
+                - w를 조정하다가 보면 pass 했는데 fail로 되는 부분 존재
+            2. ![](img/biclass2.JPG)
+                - 간단하고 편한데 1보다 너무 커버릴 수 있음
+        - Logistic Hypothesis 
+            - 위의 문제를 해결할 0~1 사이로 압축시켜주는 함수 필요
+            - sigmoid(logistic) function
+                - ![](img/sigmoid1.JPG)
+                - z = wx, H(x) = g(z)
+                - ![](img/sigmoid2.JPG)
 
 
