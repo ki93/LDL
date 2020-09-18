@@ -132,4 +132,19 @@
                 - z = wx, H(x) = g(z)
                 - ![](img/sigmoid2.JPG)
 
+# Lecture5-2
+### Logistic (regression) classification : cost function & gradient decent
+
+- ![](img/sigcostfunc1.JPG)
+    - 상단의 그림과 같이 Sigmooid를 사용하는 경우 Linear 하지 않기 때문에 경사 타고 내려가기로는 최소 값(Global Min)을 구하기 어려움 (Local Min이 존재하기 때문)
+- ![](img/solsigcostfunc1.JPG)
+    - log를 이용하면 sigmoid의 굴곡진 부분과 반대로 굴곡이져서 상쇄가 되어 그래프가 cost 함수가 구불구불 하지 않음
+    - 두 개의 log 함수를 합치면 기존의 종 모양의 그래프 도출 가능
+- ![](img/solsigcostfunc2.JPG)
+    - tensorflow 같은 곳에서 if 구문으로 나눠서 하기 힘드니까 상단의 그림과 같이 계산식을 설정하여 진행
+- ![](img/solsigcostfunc3.JPG)
+    - 최종 cost function은 위와 같고 Gradient decent algorithm을 적용하면 됨    
+    - tensorflow에 library 존재 : GradientDescentOptimizer (그림 참고)
+
+
 
